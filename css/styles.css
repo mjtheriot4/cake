@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: #372B61;
+
+}
+.lyrics {
+  width: 30em;
+  background-color: rgba(0,0,0,.5);
+  display: block;
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+}
+img {
+  position: fixed;
+  height: 4000px;
+  right: -500px;
+  top: 0;
+}
+.move{
+  -webkit-transition: 202s;
+  -moz-transition: 202s;
+  -ms-transition: 202s;
+  -o-transition: 202s;
+  transition: 202s;
+  top: -3300px;
+}
+.scroll-box {
+  height: 30%;
+  width: 90%;
+  max-width: 40em;
+  position: fixed;
+  overflow: scroll;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  opacity: 0;
+}
+.fade-in {
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  opacity: 1;
+}
+.controls {
+  left: 50%;
+  top: 80%;
+  position: fixed;
+  transform: translate(-50%, -80%);
+  z-index: 10;
+  display: none;
+}
+p {
+  padding:1.2em 0;
+  text-align: center;
+  font-family: "open sans", sans-serif;
+  line-height: 1.4;
+  display: block;
+}
